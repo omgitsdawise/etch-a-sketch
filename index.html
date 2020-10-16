@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Etch A Sketch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+
+</head>
+
+<body>
+
+    <div id="body">
+        <div id="controls">
+            <div id="header">
+                <h1><a href="#">etch-a-sketch</a></h1>
+
+            </div>
+            <div class='control control-row'>
+                <div class="control">
+                    <label for="grid-color">Color: </label>
+                    <input id="grid-color" class='control' type="color">
+                </div>
+
+                <input id="clear" class='control grey-button' type="button" value="Clear">
+            </div>
+            <div class='control control-row'>
+                <div class="control">
+                    <label for="grid-color">Size: </label>
+                    <input id="grid-size" class='control' type="number" min="1" max="64" value="4">
+
+                </div>
+                <input id="set" class='control grey-button' type="button" value="Set">
+            </div>
+            <div class='control control-row'>
+                <div class="control">
+                    <input id="random-colors" class="control" type="checkbox" checked=true />
+                    <label for="random-colors">Random Colors</label>
+                </div>
+            </div>
+            <div class='control control-row'>
+                <input id="random-fill" class='control grey-button' type="button" value="Random Fill">
+
+            </div>
+
+            <div id="credits">
+                <h1>Made by <a href="https://github.com/omgitsdawise" target="_blank">omgitsdawise</a> <br><br> Inspired
+                    by <a href="https://www.theodinproject.com/" target="_blank">TOP</a></h1>
+            </div>
+        </div>
+
+
+        <div class="container"></div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
